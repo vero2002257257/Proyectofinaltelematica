@@ -5,6 +5,6 @@ RUN apt install python3-pip -y
 RUN pip3 install dash
 RUN pip3 install pandas
 RUN pip3 install openpyxl
-COPY wikipagin.xlsx /
+COPY datanoticias.xlsx /
 COPY app.py /
 EXPOSE 80
