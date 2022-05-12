@@ -18,7 +18,7 @@ def serve_layout():
                         html.Div(read['Ayuda'])])
 
 
-app.layout =serve_layout
+app.layout = serve_layout
 
 if __name__ == '__main__':
 
