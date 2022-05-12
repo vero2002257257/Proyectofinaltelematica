@@ -12,10 +12,8 @@ read = pd.read_excel('wikipagin.xlsx')
 return read.Div([html.H1(read['Titulo']),
                
 html.Div(read['Tema']),
-
-html.Div(read['Info']),
               
-html.Div(read['Ayuda'])])])
+html.Div(read['Ayuda'])])
 
 
 app.layout =serve_layout
