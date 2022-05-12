@@ -8,12 +8,12 @@ app = Dash(__name__)
 
 #Cargar la base de datos
 def serve_layout():
-  df = pd.read_excel('datanoticias.xlsx')
+  df = pd.read_excel('wikipagin.xlsx')
   return html.Div([html.H1(df['Titulo']),
                        html.Div(df['Tema']),
                        html.Div(df['Ayuda'])])
 #funcion principal
-app.layout = serve_layout()
+app.layout = serve_layout
 
 if __name__ == '__main__':
   #Cargar el objeto principal a todas las interfaces de red en el puerto 80
