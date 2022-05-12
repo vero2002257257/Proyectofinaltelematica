@@ -13,7 +13,7 @@ def serve_layout():
                        html.Div(df['Tema']),
                        html.Div(df['Ayuda'])])
 #funcion principal
-app.layout = serve_layout
+app.layout = serve_layout()
 
 if __name__ == '__main__':
   #Cargar el objeto principal a todas las interfaces de red en el puerto 80
