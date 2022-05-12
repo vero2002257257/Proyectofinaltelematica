@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.graph_objs as go
 
 #2.Base de datos
-app = Dash(_name_)
+app = Dash(__name__)
 
 def serve_layout():
   read = pd.read_excel('wikipagin.xlsx')
@@ -20,7 +20,7 @@ def serve_layout():
 
 app.layout =serve_layout
 
-if_name_ == '_main_':
+if __name__ == '__main__':
 
   #Objeto a todas las interfaces de red en puerto 80
    app.run_server(host='0,0,0,0',port=80)
