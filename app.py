@@ -20,7 +20,7 @@ def serve_layout():
 
 app.layout =serve_layout
 
-if_name== 'main_':
+if_name_ == '_main_':
 
   #Objeto a todas las interfaces de red en puerto 80
    app.run_server(host='0,0,0,0',port=80)
